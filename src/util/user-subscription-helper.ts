@@ -5,8 +5,8 @@ import { SocketIO, users } from "..";
 import Block from "../models/Block";
 
 class UserSubscriptionHelper{
-    //TODO: Time complexity of this function is n cubes. Decrease it using database for users and subscriptions.
     
+    //TODO: Time complexity of this function is n cubes. Decrease it using database for users and subscriptions.
     handle(blocks : Block[]){
         blocks.forEach(block => { 
         users.forEach(element => {
